@@ -14,8 +14,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- jQuery $$$ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- scripts -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
+
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
     <!-- fonts -->
@@ -25,7 +27,7 @@
 <body>
     <div id="page-wrapper">
         <header>
-            <a href="http://www.samdarbonne.github.com"><h1>Sam Darbonne <img src="http://i.imgur.com/Ke0BkbV.png?1"></h1></a>
+            <a href="index.html"><h1 class="sam">Sam Darbonne <img src="http://i.imgur.com/Ke0BkbV.png?1"></h1></a>
         </header>
         <nav>
             <ul>
@@ -43,7 +45,7 @@
         <div class="row">
             <div class="one-third column">
                 <div class="boxed">
-                    <h1>JavaScript</h1>
+                    <h1 id="one">JavaScript</h1>
                     <ul>
                         <a href="http://www.github.com/samdarbonne/functions-training">
                             <li>Functions Training</li>
@@ -51,15 +53,15 @@
                         <a href="events/ready/index.html">
                             <li>jQuery Events Training</li>
                         </a>
-                        <a href="">
-                            <li>Third list item</li>
+                        <a class="rave" href="#">
+                            <li>Rave button</li>
                         </a>
                     </ul>
                 </div>
             </div>
             <div class="one-third column">
                 <div class="boxed">
-                    <h1>Ruby</h1>
+                    <h1 id="two">Ruby</h1>
                     <ul>
                         <a href="">
                             <li>First list item</li>
@@ -75,7 +77,7 @@
             </div>
             <div class="one-third column">
                 <div class="boxed">
-                    <h1>Other</h1>
+                    <h1 id="three">Other</h1>
                     <ul>
                         <a href="">
                             <li>First list item</li>
@@ -91,19 +93,20 @@
             </div>
         </div>
         <div class="row" class="clearfix">
-            <div class="three columns" class="content-class">
+            <div class="four columns" class="content-class">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae doloribus, consequuntur numquam, rerum ipsam adipisci. Labore quos, beatae facilis minus aliquam officiis magni, maxime culpa sapiente voluptatum reiciendis magnam vero quo. Nobis rem nisi debitis non voluptates dolorem, maiores dicta modi, ipsam, nihil nulla. Iusto enim, impedit quo fugit voluptates magnam id excepturi nisi asperiores officia ea facere atque eum nesciunt aperiam consequatur exercitationem quia est vel provident repellendus nobis. Omnis, facilis. Facilis aliquam odio eveniet consectetur facere. Perspiciatis minima quia minus, vel consectetur rem ab voluptatibus veritatis in necessitatibus consequatur, fuga modi dignissimos molestias beatae recusandae voluptate itaque, aspernatur qui. Iusto provident harum cupiditate illo, tempora dolorum dolore, ducimus cum labore omnis enim distinctio quod nostrum. Distinctio dolorum consequatur ipsa eveniet suscipit saepe nostrum nam corporis temporibus laborum, quibusdam facilis ab eaque aut fugit explicabo nesciunt! Distinctio quod voluptatum nemo repellat adipisci nobis sed odio ex, dignissimos nesciunt.</p>
             </div>
-            <div class="nine columns" class="content-class">
-                <h2>Main body heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae aut fugit neque ducimus labore aliquid natus aperiam consequuntur ad tempore et pariatur, corporis maxime exercitationem praesentium sed, rerum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus harum error explicabo dolore praesentium sit sapiente exercitationem inventore rerum, vel quisquam, atque quasi vero blanditiis corrupti consectetur iure. Sint consequatur, id voluptates quia nostrum distinctio minima saepe dolore quidem vero alias maiores deleniti quos excepturi perferendis explicabo nulla magnam necessitatibus facilis quas error accusamus! Iste ut, nostrum eveniet officia itaque nesciunt mollitia magnam natus, quis similique eos ratione harum nihil deleniti, molestias eaque. Ipsam necessitatibus cum cumque doloribus quod eligendi quisquam aliquid fugit, recusandae. Maiores excepturi eveniet mollitia facilis nam enim amet at laborum fuga numquam odio quibusdam ea debitis dolorem omnis, quisquam earum aut beatae ipsa fugiat. Aspernatur ipsam dolorum consectetur, autem minus accusantium quasi velit amet dolor. Itaque maiores nesciunt, totam incidunt. Ullam consequatur facere, veritatis cupiditate, libero numquam perspiciatis alias commodi impedit. Beatae commodi, ullam error magni adipisci. Porro cupiditate est reiciendis, quae, sit dignissimos nulla doloremque reprehenderit expedita sapiente exercitationem esse aperiam aut rem blanditiis voluptatibus eos recusandae nisi, omnis! Nam voluptate aperiam necessitatibus impedit delectus, veniam iure tempora sapiente eligendi saepe nostrum eius autem placeat, labore architecto officia dignissimos quos culpa aut! Quia reiciendis officiis similique. Eaque ab quae quaerat officia error culpa, soluta obcaecati.</p>
+            <div class="eight columns" class="content-class">
+                <h1>Main body heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae aut fugit neque ducimus labore aliquid natus aperiam consequuntur ad tempore et pariatur, corporis maxime exercitationem praesentium sed, rerum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus harum error explicabo dolore praesentium sit sapiente exercitationem inventore rerum, vel quisquam, atque quasi vero blanditiis corrupti consectetur iure. Sint consequatur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis asperiores alias libero delectus eum. Iusto ut placeat ea quos quia qui reiciendis, assumenda incidunt velit provident architecto excepturi, consequuntur quidem </p><p>officia praesentium, corporis modi rerum laudantium eum beatae voluptas voluptatem, temporibus deserunt. Possimus excepturi vel sunt a nisi itaque obcaecati minima, accusantium ut cumque nemo vero iusto, provident natus, aliquid deleniti velit reprehenderit repellendus illum. Qui minus magni perspiciatis, assumenda hic dolores commodi fuga vitae. Reiciendis consequatur ab nulla, architecto hic modi et error animi exercitationem deserunt, temporibus, laboriosam libero odit ipsa unde! Doloribus quae, ipsum aperiam magnam cupiditate repellat. Lorem ipsum dolor sit </p><p>amet, consectetur adipisicing elit. Quae sunt voluptate, at mollitia earum itaque repudiandae officiis excepturi molestiae, praesentium numquam quia porro expedita, fuga delectus rerum eligendi totam cumque necessitatibus accusantium maxime fugit voluptatum tempora nisi est. Consequatur repudiandae, numquam ratione nobis suscipit illum iure nam architecto hic ut a nostrum modi ipsum temporibus dicta error, expedita atque doloribus velit non. Totam rerum doloremque atque ipsa unde distinctio maiores odit, sit. Tempore quam, quaerat incidunt illum ipsa laboriosam, eligendi, impedit sed magni beatae exercitationem odit accusamus vel facilis ratione eos minima vitae consequuntur eveniet dicta provident. Repellat vel animi dicta consequatur odio itaque et atque molestiae voluptatum autem tenetur </p><p>esse, explicabo voluptates minus dignissimos expedita, quaerat ratione perferendis ipsa dolorum eaque quas nam sunt nostrum maxime! Maxime id quae ab corrupti hic nostrum necessitatibus ullam voluptates minima harum. Qui deserunt pariatur sequi fugiat, eos voluptatum maxime, velit assumenda commodi natus nihil, consequatur dolores laboriosam tempora iste perspiciatis. Labore ea molestiae, corporis veniam placeat voluptatum libero facilis sed tenetur corrupti omnis nesciunt unde ad minima ipsam ex aspernatur doloremque itaque inventore rerum temporibus sint! Provident dolores, natus asperiores dolore, repudiandae assumenda corporis recusandae accusantium laboriosam nobis id, odit aliquam repellat.</p>
             </div>
             
         </div>
         <aside>
         </aside>
     </div>
+        <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>

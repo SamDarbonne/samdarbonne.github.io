@@ -9,6 +9,11 @@ img {
     top: 15px;
 }
 
+p {
+    color: #80BA5D;
+    text-align: justify;
+}
+
 a {
     text-decoration: none;
     color: #80BA5D;
@@ -41,15 +46,17 @@ li:hover {
     background-color: #B1DF95;
     border-radius: 5px;
 }
-
-h1 {
-    padding-left: 30px;
-    font-family: 'Rubik One', sans-serif;
+nav h1{
     color: #0E553E;
+}
+h1 {
+    font-family: 'Rubik One', sans-serif;
+    color: #80BA5D;
 }
 
 .content-class {
     background-color: #0E553E;
+    font-color: #80BA5D;
 }
 .block {
     display: block;
@@ -93,8 +100,8 @@ header {
     margin: 50px 50px 0 50px;
     background-color: #0E553E;
     display: block;
-    height: 200px;
-    padding: 70px;
+    padding: 20px;
+    text-align: center;
 }
 
 .clearfix:after {
@@ -104,6 +111,7 @@ header {
     clear: both;
     height: 0;
     font-size: 0
+    color: #80BA5D;
 }
 
 .maintext {
@@ -117,10 +125,24 @@ header {
 	margin-bottom: 4px;
     text-align: center;
 }
+#one {
+    color: #80BA5D;
+}
 
 .boxed {
     border-radius: 5px;
     border: 2px, solid, black;
     
+}
+
+.sam {
+    color: #0E553E;
+    padding-left: 30px;
+    display: inline-block;
+}
+.sam:hover{
+    color: #80BA5D;
+    background-color: #0E553E;
+    border-radius: 5px;
 }
 
